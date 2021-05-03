@@ -1,0 +1,20 @@
+%textStyle {
+  text-align: center;
+  line-height: 4rem;
+  color: #AABBBB;
+  text-shadow: -1px -1px 0px rgba($color: #A4A4A4, $alpha: 0.25), 2px 2px 2px rgba($color: #fff, $alpha: 0.25);
+}
+
+.siteTitle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+
+  font-size: 7.3rem;
+  @extend %textStyle;
+}
+.siteSubTitle {
+  font-size: 3.1rem;
+  @extend %textStyle;
+}
