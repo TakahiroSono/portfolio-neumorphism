@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "portfolio-fc7bc": {
+      "hosting": {
+        "portfolio": [
+          "portfolio-fc7bc"
+        ]
+      }
+    }
+  }
+}
