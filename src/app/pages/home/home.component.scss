@@ -18,6 +18,9 @@
   @extend %textStyle;
 }
 
+$up-sp: 600px;
+$dw-sp: 599px;
+
 %navItems {
   border-radius: 50%;
   box-shadow: 2px 2px 6px #c4c4c4, -2px -2px 6px #fff;
@@ -26,6 +29,10 @@
   background-size: 65% 65%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  @media screen and (max-width: $up-sp) {
+    height: 7rem;
+    width: 7rem;
+  }
 }
 %navItemActive {
   box-shadow: inset -4px -4px 10px #fff, inset 4px 4px 4px #c4c4c4;
@@ -40,7 +47,9 @@
     display: flex;
     width: 60%;
     justify-content: space-around;
-
+    @media screen and (max-width: $up-sp) {
+      width: 85%;
+    }
   }
   &-item{
     &-favorite {
@@ -48,7 +57,7 @@
       background-image: url("../../../assets/favorite.svg");
       &.active {
         @extend %navItemActive;
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $up-sp) {
           background-image: url("../../../assets/favorite_active.svg");
         }
       }
@@ -58,7 +67,7 @@
       background-image: url("../../../assets/skills.svg");
       &.active {
         @extend %navItemActive;
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $up-sp) {
           background-image: url("../../../assets/skills_active.svg");
         }
       }
@@ -68,7 +77,7 @@
       background-image: url("../../../assets/links.svg");
       &.active {
         @extend %navItemActive;
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: $up-sp) {
           background-image: url("../../../assets/links_active.svg");
         }
       }
