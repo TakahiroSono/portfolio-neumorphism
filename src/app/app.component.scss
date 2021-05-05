@@ -1,0 +1,13 @@
+$up-sp: 600px;
+$dw-sp: 599px;
+
+app-navigation{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  @media screen and (max-width: $up-sp) {
+    width: 85%;
+  }
+}
