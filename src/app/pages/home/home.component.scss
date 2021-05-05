@@ -1,3 +1,6 @@
+$up-sp: 600px;
+$dw-sp: 599px;
+
 %textStyle {
   text-align: center;
   line-height: 4rem;
@@ -5,82 +8,32 @@
   text-shadow: -1px -1px 0px rgba($color: #A4A4A4, $alpha: 0.25), 2px 2px 2px rgba($color: #fff, $alpha: 0.25);
 }
 .siteTitle{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -80%);
-
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 52vh;
+  position: relative;
   font-size: 7.3rem;
-  @extend %textStyle;
 }
 .siteSubTitle {
   font-size: 3.1rem;
   @extend %textStyle;
 }
 
-$up-sp: 600px;
-$dw-sp: 599px;
+.titleText {
+  @extend %textStyle;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -80%);
+}
 
-%navItems {
-  border-radius: 50%;
-  box-shadow: 2px 2px 6px #c4c4c4, -2px -2px 6px #fff;
-  height: 10rem;
-  width: 10rem;
-  background-size: 65% 65%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+app-navigation{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
   @media screen and (max-width: $up-sp) {
-    height: 7rem;
-    width: 7rem;
-  }
-}
-%navItemActive {
-  box-shadow: inset -4px -4px 10px #fff, inset 4px 4px 4px #c4c4c4;
-}
-
-.nav{
-  &-list {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
-    @media screen and (max-width: $up-sp) {
-      width: 85%;
-    }
-  }
-  &-item{
-    &-favorite {
-      @extend %navItems;
-      background-image: url("../../../assets/favorite.svg");
-      &.active {
-        @extend %navItemActive;
-        @media screen and (max-width: $up-sp) {
-          background-image: url("../../../assets/favorite_active.svg");
-        }
-      }
-    }
-    &-skills {
-      @extend %navItems;
-      background-image: url("../../../assets/skills.svg");
-      &.active {
-        @extend %navItemActive;
-        @media screen and (max-width: $up-sp) {
-          background-image: url("../../../assets/skills_active.svg");
-        }
-      }
-    }
-    &-link{
-      @extend %navItems;
-      background-image: url("../../../assets/links.svg");
-      &.active {
-        @extend %navItemActive;
-        @media screen and (max-width: $up-sp) {
-          background-image: url("../../../assets/links_active.svg");
-        }
-      }
-    }
+    width: 85%;
   }
 }
