@@ -11,6 +11,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { LinksComponent } from './pages/links/links.component';
 import { TitleComponent } from './common/title/title.component';
 import { CardComponent } from './common/card/card.component';
+import { BackHomeButtonComponent } from './common/back-home-button/back-home-button.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CardComponent } from './common/card/card.component';
     SkillsComponent,
     LinksComponent,
     TitleComponent,
-    CardComponent
+    CardComponent,
+    BackHomeButtonComponent
   ],
   imports: [
     BrowserModule,
