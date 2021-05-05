@@ -19,6 +19,12 @@ $dw-sp: 599px;
   box-shadow: inset -4px -4px 10px #fff, inset 4px 4px 4px #c4c4c4;
 }
 
+nav {
+  display: inline-block;
+  width: 100%;
+  max-width: 1000px;
+}
+
 .nav{
   &-list {
     width: 100%;
