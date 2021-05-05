@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LinksComponent implements OnInit {
   title = 'Links';
+  linkList = ['Qiita', 'Facebook', 'github']
 
   constructor() { }
 
