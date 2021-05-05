@@ -9,6 +9,7 @@ import { NavigationComponent } from './common/navigation/navigation.component';
 import { FavoriteComponent } from './pages/favorite/favorite.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { LinksComponent } from './pages/links/links.component';
+import { TitleComponent } from './common/title/title.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LinksComponent } from './pages/links/links.component';
     NavigationComponent,
     FavoriteComponent,
     SkillsComponent,
-    LinksComponent
+    LinksComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
