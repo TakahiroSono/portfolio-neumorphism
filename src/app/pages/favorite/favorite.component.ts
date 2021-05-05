@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoriteComponent implements OnInit {
   title = 'Favorite';
+  favoriteList = ['Manga', 'YouTube', 'Amazon \nprime video', 'programming', 'design', 'games'];
 
   constructor() { }
 

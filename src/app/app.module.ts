@@ -10,6 +10,7 @@ import { FavoriteComponent } from './pages/favorite/favorite.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { LinksComponent } from './pages/links/links.component';
 import { TitleComponent } from './common/title/title.component';
+import { CardComponent } from './common/card/card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TitleComponent } from './common/title/title.component';
     FavoriteComponent,
     SkillsComponent,
     LinksComponent,
-    TitleComponent
+    TitleComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
