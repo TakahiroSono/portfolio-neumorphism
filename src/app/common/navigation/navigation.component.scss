@@ -34,31 +34,31 @@ nav {
   &-item{
     &-favorite {
       @extend %navItems;
-      background-image: url("../../../assets/favorite.svg");
+      background-image: url("../../../assets/image/favorite.svg");
       &.active {
         @extend %navItemActive;
         @media screen and (max-width: $up-sp) {
-          background-image: url("../../../assets/favorite_active.svg");
+          background-image: url("../../../assets/image/favorite_active.svg");
         }
       }
     }
     &-skills {
       @extend %navItems;
-      background-image: url("../../../assets/skills.svg");
+      background-image: url("../../../assets/image/skills.svg");
       &.active {
         @extend %navItemActive;
         @media screen and (max-width: $up-sp) {
-          background-image: url("../../../assets/skills_active.svg");
+          background-image: url("../../../assets/image/skills_active.svg");
         }
       }
     }
     &-link{
       @extend %navItems;
-      background-image: url("../../../assets/links.svg");
+      background-image: url("../../../assets/image/links.svg");
       &.active {
         @extend %navItemActive;
         @media screen and (max-width: $up-sp) {
-          background-image: url("../../../assets/links_active.svg");
+          background-image: url("../../../assets/image/links_active.svg");
         }
       }
     }
