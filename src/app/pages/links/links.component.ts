@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-links',
@@ -9,7 +10,9 @@ export class LinksComponent implements OnInit {
   title = 'Links';
   linkList = ['Qiita', 'Facebook', 'github']
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle(this.title + ' | ' + this.titleService.getTitle())
+   }
 
   ngOnInit(): void {
   }

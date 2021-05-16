@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-skills',
@@ -9,7 +10,9 @@ export class SkillsComponent implements OnInit {
   title = 'Skills';
   skillList = ['C++', 'Python', 'JavaScript', 'Java', 'HTML', 'CSS/SCSS']
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle(this.title + ' | ' + this.titleService.getTitle())
+   }
 
   ngOnInit(): void {
   }
