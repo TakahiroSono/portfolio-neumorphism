@@ -10,8 +10,8 @@ export class HomeComponent implements OnInit {
   description = '駆け出しエンジニアsonioの自己紹介ポートフォリオ';
 
   constructor(private titleService: Title, private metaService: Meta) {
-    this.titleService.setTitle(this.titleService.getTitle())
-    this.metaService.addTag({name: 'description', content: this.description})
+    this.titleService.setTitle('sonio\'s Portfolio');
+    this.metaService.updateTag({name: 'description', content: this.description})
    }
 
   ngOnInit(): void {

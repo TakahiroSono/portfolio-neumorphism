@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-title',
@@ -8,9 +9,11 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TitleComponent implements OnInit {
   @Input() title!: String;
 
-  constructor() { }
+  constructor(private titleService: Title) {
+   }
 
   ngOnInit(): void {
+    this.titleService.setTitle(this.title + ' | sonio\'s Portfolio');
   }
 
 }
