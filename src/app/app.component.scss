@@ -2,12 +2,13 @@ $up-sp: 600px;
 $dw-sp: 599px;
 
 app-navigation{
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 6rem;
+  display: block;
+  margin-left: 20%;
   width: 60%;
   @media screen and (max-width: $up-sp) {
+    margin-left: 7.5%;
     width: 85%;
   }
 }

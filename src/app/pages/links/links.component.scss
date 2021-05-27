@@ -1,19 +1,27 @@
+$up-sp: 600px;
+$dw-sp: 599px;
+
+$up-tb: 900px;
+
+
 app-title {
   display: block;
+  height: 30%;
+  @media screen and (max-width: $up-tb) {
+    height: 20%;
+  }
 }
 
 app-card {
   display: block;
   height: 30%;
+  @media screen and (max-width: $up-tb){
+    height: 50%;
+    overflow: scroll;
+  }
 }
 
 app-back-home-button {
   display: block;
   margin-top: 3rem;
-}
-
-app-navigation {
-  text-align: center;
-  margin-top: 6rem;
-  display: block;
 }
